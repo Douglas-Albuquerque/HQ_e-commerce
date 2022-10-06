@@ -1,9 +1,9 @@
-import NavBar from "./Components/NavBar";
+import RoutePage from "./Router/index"
 
 function App() {
   return (
     <div>
-      <p>HOME</p>
+      <RoutePage />
     </div>
   );
 }
