@@ -1,9 +1,22 @@
 .navBar {
   display: flex;
-  justify-content: flex-end;
-  background-color: red;
-  font-family: 'Nabla', cursive;
-  max-height: 100px;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  max-height: 90px;
+  background-image: url('https://imgs.extra.com.br/1517619252/1xg.jpg');
+}
+.navButtons {
+  display: flex;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  max-height: 30px;
+  background: rgb(32, 27, 27);
+  background: radial-gradient(
+    circle,
+    rgba(32, 27, 27, 1) 0%,
+    rgba(120, 95, 95, 1) 46%,
+    rgba(50, 45, 45, 0.9615196420365021) 100%
+  );
 }
 .list {
   display: flex;
@@ -12,20 +25,19 @@
   color: #ffffff;
 }
 .item {
-  margin-right: 15px;
+  margin-right: 70px;
   font-size: 30px;
-  font-weight: ;
   cursor: pointer;
+  align-items: center;
+  margin-top: 5px;
 }
 .item:hover {
   cursor: poiter;
-  color: #fece08;
+  color: red;
 }
-.avatarImg {
-  margin-top: 8px;
-  margin-right: 15px;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
+.logoImage {
+  width: 180px;
+  height: 90px;
   cursor: pointer;
+  margin-right: 4em;
 }
