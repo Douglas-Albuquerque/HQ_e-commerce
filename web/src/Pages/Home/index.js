@@ -5,6 +5,7 @@ import scrollButtom from "../../Assets/scrollButtom.png"
 import RareCard from '../../Components/RareCard';
 import SimpleCard from '../../Components/SimpleCard';
 import { ArrowButtons, BodyContainer, ContainerCards, ImgArrowButtom } from './Styles';
+import Footer from '../../Components/Footer';
 
 class HomePage extends Component {
   constructor(props) {
@@ -66,7 +67,7 @@ class HomePage extends Component {
         <button onClick={this.teste}>teste</button>
         <main>
           <ContainerCards>
-            {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
+            {/* {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)} */}
             {dataSimpleCard.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
           </ContainerCards>
           <ArrowButtons>
@@ -74,6 +75,7 @@ class HomePage extends Component {
             <ImgArrowButtom><img src={scrollButtom} alt="" /></ImgArrowButtom>
           </ArrowButtons>
         </main>
+        <Footer/>
       </BodyContainer>
     )
   }

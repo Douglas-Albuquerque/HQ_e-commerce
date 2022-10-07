@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { MdShoppingCart, MdHome } from "react-icons/md";
 
 import marvelLogo from '../Assets/Marvel_Logo.png'
-import { Nav, Ul, NavButtons, LogoImg, Li } from './StylesNavBar';
+import { NavButtons, LogoImg, NavStyle, ContainerUl, ListButtom } from './StylesNavBar';
 
 
 const NavBar = () => {
@@ -24,20 +24,20 @@ const NavBar = () => {
 
   return (
     <div>
-      <Nav>
-        <Ul>
+      <NavStyle>
+        <ContainerUl>
           <LogoImg onClick={navNotFound} src={marvelLogo} alt='logo da marvel' />
-        </Ul >
-      </Nav>
+        </ContainerUl >
+      </NavStyle>
       <NavButtons>
-        <Ul>
-          <Li>
+        <ContainerUl>
+          <ListButtom>
             <p onClick={navNotFound}><MdHome /></p>
-          </Li>
-          <Li>
+          </ListButtom>
+          <ListButtom>
             <p onClick={navLogin}> <MdShoppingCart /></p>
-          </Li>
-        </Ul>
+          </ListButtom>
+        </ContainerUl>
       </NavButtons>
     </div>
 

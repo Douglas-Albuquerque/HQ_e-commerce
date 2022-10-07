@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Nav = styled.nav`
+export const NavStyle = styled.nav`
   display: flex;
   justify-content: center;
   font-family: 'Playfair Display', serif;
@@ -8,14 +8,14 @@ export const Nav = styled.nav`
   background-image: url('https://imgs.extra.com.br/1517619252/1xg.jpg');
 
 `;
-export const Ul = styled.ul`
+export const ContainerUl = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
   color: #ffffff;
 
 `;
-export const NavButtons = styled(Nav)`
+export const NavButtons = styled(NavStyle)`
   max-height: 1.8rem;
   background: rgb(32, 27, 27);
   background: radial-gradient(
@@ -31,7 +31,7 @@ export const LogoImg = styled.img`
   cursor: pointer;
   margin-right: 4rem;
 `
-export const Li = styled.li`
+export const ListButtom = styled.li`
   margin-right: 4.3rem;
   font-size: 1.8rem;
   cursor: pointer;
