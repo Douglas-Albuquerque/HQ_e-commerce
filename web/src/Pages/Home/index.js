@@ -3,6 +3,8 @@ import NavBar from '../../Components/NavBar'
 
 import './style.css'
 import scrollButtom from "../../Assets/scrollButtom.png"
+import RareCard from '../../Components/RareCard';
+import SimpleCard from '../../Components/SimpleCard';
 
 class HomePage extends Component {
   constructor(props) {
@@ -11,43 +13,78 @@ class HomePage extends Component {
     };
   }
   render() {
+    const dataSimpleCard = [
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+    ]
+    const dataRareCard = [
+      {
+        id: '1',
+        title: 'Return of Wolverine',
+        imgUrl: "https://uploads.jovemnerd.com.br/wp-content/uploads/2018/06/return-of-wolverine.jpg",
+        price: "12,50",
+      },
+    ]
+
     return (
       <div className='main'>
         <NavBar />
         <main>
           <ul className='containerCards'>
-            <li className='rareCard'>
-              <div className='rareTicket'>
-                <p className='textRare'>Raro</p>
-              </div>
-              <div className='containerImg'>
-                <img className='imgCard' src="https://uploads.jovemnerd.com.br/wp-content/uploads/2018/06/return-of-wolverine.jpg" alt="capa guerras infinatas" />
-              </div>
-              <div className='cardText'>
-                <p>Return of Wolverine</p>
-                <p>Price:$ 12,00</p>
-              </div>
-            </li>
-            <li className='card'>
-              <div className='containerImg'>
-                <img className='imgCard' src="https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg" alt="capa guerras infinatas" />
-              </div>
-              <div className='cardText'>
-                <p>Venom de volta ao lar</p>
-                <p>Price:$ 2,50</p>
-              </div>
-            </li>
-            
-            <li className='card'></li>
-            <li className='card'></li>
-            <li className='card'></li>
-          </ul>
-          <ul className='containerCards'>
-            <li className='card'></li>
-            <li className='card'></li>
-            <li className='card'></li>
-            <li className='card'></li>
-            <li className='card'></li>
+            {dataRareCard.map((item) => <RareCard title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
+            {dataSimpleCard.map((item) => <SimpleCard title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
           </ul>
           <div className='arrowButtons'>
             <button><img src={scrollButtom} alt="" /></button>
