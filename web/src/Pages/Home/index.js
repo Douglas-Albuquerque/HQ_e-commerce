@@ -1,10 +1,10 @@
 import { Component, } from 'react'
 import NavBar from '../../Components/NavBar'
 
-import './style.css'
 import scrollButtom from "../../Assets/scrollButtom.png"
 import RareCard from '../../Components/RareCard';
 import SimpleCard from '../../Components/SimpleCard';
+import { ArrowButtons, BodyContainer, ContainerCards, ImgArrowButtom } from './Styles';
 
 class HomePage extends Component {
   constructor(props) {
@@ -26,8 +26,8 @@ class HomePage extends Component {
 
         .then(
           async response => {
-            this.setState({ data: response.data.results})
-             //console.log(response.data.results);
+            this.setState({ data: response.data.results })
+            //console.log(response.data.results);
             // console.log(response.data.results[6].title);
             // console.log(response.data.results[5].pageCount);
             // console.log(response.data.results[5].prices[0].price);
@@ -58,79 +58,23 @@ class HomePage extends Component {
         imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
         price: "2,50",
       },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-    ]
-    const dataRareCard = [
-      {
-        id: '1',
-        title: 'Return of Wolverine',
-        imgUrl: "https://uploads.jovemnerd.com.br/wp-content/uploads/2018/06/return-of-wolverine.jpg",
-        price: "12,50",
-      },
     ]
     const data = this.state.data
     return (
-      <div className='main'>
+      <BodyContainer>
         <NavBar />
         <button onClick={this.teste}>teste</button>
         <main>
-          <ul className='containerCards'>
-            {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images}  price={item.prices[0].price} />)}
-            {/* {dataSimpleCard.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.imgUrl} price={item.price} />)} */}
-          </ul>
-          <div className='arrowButtons'>
-            <button><img src={scrollButtom} alt="" /></button>
-            <button><img src={scrollButtom} alt="" /></button>
-          </div>
+          <ContainerCards>
+            {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
+            {dataSimpleCard.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
+          </ContainerCards>
+          <ArrowButtons>
+            <ImgArrowButtom><img src={scrollButtom} alt="" /></ImgArrowButtom>
+            <ImgArrowButtom><img src={scrollButtom} alt="" /></ImgArrowButtom>
+          </ArrowButtons>
         </main>
-      </div>
+      </BodyContainer>
     )
   }
 }
