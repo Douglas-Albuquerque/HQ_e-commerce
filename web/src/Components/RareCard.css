@@ -44,6 +44,15 @@
 }
 .cardText {
   text-align: center;
+  align-items: center;
   color: white;
   line-height: 5px;
+  margin-left: 6px;
+  overflow: hidden;
+  max-width: 18ch;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+.cardText p{
+  overflow-wrap: brake-word;  
 }

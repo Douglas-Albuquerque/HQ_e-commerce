@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import { Component, } from 'react'
 import NavBar from '../../Components/NavBar'
 
 import './style.css'
@@ -10,9 +10,47 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      data: []
     };
   }
+  async componentDidMount() {
+    const url = "http://gateway.marvel.com/v1/public/comics?ts=1665019512347&apikey=5a1ba5f255f58d9125b7a76d5a30a652&hash=7d1420e9be5449cf737f134a12d2fcbd"
+    try {
+      const header = {
+        method: "GET"
+      }
+      await fetch(url, header)
+        .then(
+          async response => response.json()
+        )
+
+        .then(
+          async response => {
+            this.setState({ data: response.data.results})
+             //console.log(response.data.results);
+            // console.log(response.data.results[6].title);
+            // console.log(response.data.results[5].pageCount);
+            // console.log(response.data.results[5].prices[0].price);
+            // console.log(response.data.results[5].images[0].path);
+            // console.log(response.data.results[5].images[0].extension);
+            // console.log(response.data.results[5].creators.items[0].name);
+            // console.log(response.data.results[5].creators.items[1].name);
+          }
+        )
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
+  teste = async () => {
+
+    console.log(this.state.data[4].prices[0].price);
+
+  }
+
+
   render() {
+
     const dataSimpleCard = [
       {
         id: '1',
@@ -77,14 +115,15 @@ class HomePage extends Component {
         price: "12,50",
       },
     ]
-
+    const data = this.state.data
     return (
       <div className='main'>
         <NavBar />
+        <button onClick={this.teste}>teste</button>
         <main>
           <ul className='containerCards'>
-            {dataRareCard.map((item) => <RareCard title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
-            {dataSimpleCard.map((item) => <SimpleCard title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
+            {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images}  price={item.prices[0].price} />)}
+            {/* {dataSimpleCard.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.imgUrl} price={item.price} />)} */}
           </ul>
           <div className='arrowButtons'>
             <button><img src={scrollButtom} alt="" /></button>
