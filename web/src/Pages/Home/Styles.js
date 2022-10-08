@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const BodyContainer = styled.div`
   min-height: 100vh;
   min-width: 100vh;

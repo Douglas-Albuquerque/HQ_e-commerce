@@ -48,7 +48,7 @@ class HomePage extends Component {
     console.log(this.state.data[4].prices[0].price);
 
   }
-
+  
 
   render() {
 

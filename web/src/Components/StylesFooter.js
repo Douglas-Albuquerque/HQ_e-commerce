@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import back from "../Assets/footerImg.png"
+
 
 export const FooterContainer = styled.footer`
   display: flex;
