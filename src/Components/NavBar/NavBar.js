@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import { MdShoppingCart, MdHome } from "react-icons/md";
-import ModalShoppingCart from "./ModalShoppingCart"
 
-import marvelLogo from '../Assets/Marvel_Logo.png'
+
+import marvelLogo from '../../Assets/Marvel_Logo.png'
 import { NavButtons, LogoImg, NavStyle, ContainerUl, ListButtom } from './StylesNavBar';
+import ModalShoppingCart from '../Modal/ModalShoppingCart';
 
 
 

@@ -1,6 +1,6 @@
 import { Component, } from "react";
-import Footer from "../../Components/Footer";
-import NavBar from "../../Components/NavBar";
+import Footer from "../../Components/Footer/Footer";
+import NavBar from "../../Components/NavBar/NavBar";
 import { BodyContainer } from "../Home/Styles";
 import { ContainerCardsDetail, ContainerImg, ImgCard, LiCardDetail, LiDataCards } from "./styles";
 

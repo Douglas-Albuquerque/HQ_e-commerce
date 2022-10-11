@@ -1,5 +1,5 @@
 import React from 'react'
-import emptyCart from "../Assets/empty-cart.png"
+import emptyCart from "../../Assets/empty-cart.png"
 
 import { CloseButtom, ModalContainer, ModalContent, EmptyCartImg, ImgProduct, DetailItem } from "./StylesModalShoppingCart"
 

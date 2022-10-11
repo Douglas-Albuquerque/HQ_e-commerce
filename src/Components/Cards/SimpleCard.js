@@ -1,5 +1,5 @@
 
-import capaGen from "../Assets/capaGenerica.png"
+import capaGen from "../../Assets/capaGenerica.png"
 import { CardText, ContainerImg, ImgCard, LiCards } from "./StylesCards"
 
 const SimpleCard = ({title, imgUrl, price}) => {

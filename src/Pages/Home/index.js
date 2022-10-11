@@ -1,11 +1,11 @@
 import { Component, } from 'react'
-import NavBar from '../../Components/NavBar'
+import NavBar from '../../Components/NavBar/NavBar'
 
 import scrollButtom from "../../Assets/scrollButtom.png"
-import RareCard from '../../Components/RareCard';
-import SimpleCard from '../../Components/SimpleCard';
+import RareCard from '../../Components/Cards/RareCard';
+import SimpleCard from "../../Components/Cards/SimpleCard";
 import { ArrowButtons, BodyContainer, ContainerCards, ImgArrowButtom } from './Styles';
-import Footer from '../../Components/Footer';
+import Footer from '../../Components/Footer/Footer';
 
 class HomePage extends Component {
   constructor(props) {
