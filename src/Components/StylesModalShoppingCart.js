@@ -54,20 +54,16 @@ export const EmptyCartImg = styled.img`
 
 ` 
 export const ItemInCart = styled.div`
-
+  display: flex;
+  flex-direction: row;
 `
 export const ImgProduct = styled.img`
   width: 6rem;
   height: 10rem;
   list-style: none;
   border-radius: 0.6rem;  
-  display: flex;
-  flex: 1;
-  justify-content: start;
 `
 
 export const DetailItem = styled.div`
-  display: flex;
-  flex: 1;
   font-size: 1rem;
 `
