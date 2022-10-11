@@ -21,7 +21,7 @@ export const ModalContent = styled.div`
   cursor: default;
 `
 export const CloseButtom = styled.div`
-  background-color: transparent;
+  background-color: red;
   border: none;
   outline: none;
   width: 1.5rem;
@@ -49,7 +49,20 @@ export const CloseButtom = styled.div`
   }
 `
 export const EmptyCartImg = styled.img`
-  width: 10rem;
+  width: 1rem;
   object-fit: contain;
 
 ` 
+export const ImgProduct = styled.img`
+  width: 6rem;
+  height: 10rem;
+  list-style: none;
+  border-radius: 0.6rem;  
+  display: flex;
+  flex: 1;
+  justify-content: start;
+`
+
+export const DetailItem = styled.div`
+
+`
