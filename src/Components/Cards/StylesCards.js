@@ -28,6 +28,9 @@ export const ImgCard = styled.img`
   object-fit: contain;
   align-self: center;
   margin-top: 0.9rem;
+  &:hover{
+    cursor: pointer;
+  }
 `
 export const CardText = styled.div`
   text-align: center;
