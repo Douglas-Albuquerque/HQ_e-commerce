@@ -30,8 +30,6 @@ class HomePage extends Component {
           async response => {
             this.setState({ data: response.data.results })
             //console.log(response.data.results);
-            //console.log(response.data.results);
-            //console.log(response.data.results);
             // console.log(response.data.results[6].title);
             // console.log(response.data.results[5].pageCount);
             // console.log(response.data.results[5].prices[0].price);
