@@ -53,6 +53,9 @@ export const EmptyCartImg = styled.img`
   object-fit: contain;
 
 ` 
+export const ItemInCart = styled.div`
+
+`
 export const ImgProduct = styled.img`
   width: 6rem;
   height: 10rem;
@@ -66,4 +69,5 @@ export const ImgProduct = styled.img`
 export const DetailItem = styled.div`
   display: flex;
   flex: 1;
+  font-size: 1rem;
 `
