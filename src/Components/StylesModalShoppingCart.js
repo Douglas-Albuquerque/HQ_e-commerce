@@ -64,5 +64,6 @@ export const ImgProduct = styled.img`
 `
 
 export const DetailItem = styled.div`
-
+  display: flex;
+  flex: 1;
 `
