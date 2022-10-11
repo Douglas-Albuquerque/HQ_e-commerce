@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { Drawer } from 'antd';
 import { MdShoppingCart } from "react-icons/md";
 import "./style.css";
-import { ContainerCart, CupomDiv, ImgItem, TitleItem } from './StyledShoppingCart';
+import { AddresInput, ContainetAdress, CupomDiv,InputCupom, Purchase, PurDiv, TextAddres, TextInput} from './StyledShoppingCart';
+import CardShoppingCart from '../CardShoppingCard/CardShoppingCart';
 
 
 const ShoppingCart = () => {
   const [open, setOpen] = useState(false);
+  const confimPurchase = () => {
+    alert("Compra realizada com sucesso!")
+  }
 
   const showDrawer = () => {
     setOpen(true);
@@ -21,16 +25,24 @@ const ShoppingCart = () => {
       <p ><MdShoppingCart onClick={showDrawer} /></p>
 
       <Drawer className='ant-drawer-content' title="Carrinho" placement="right" onClose={onClose} open={open}>
-        <ContainerCart>
-          <ImgItem src="https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg" alt="" />
-          <TitleItem>
-            <p>Venom: de volta ao lar</p>
-            <p>Price: $2,50</p>
-          </TitleItem>
-          <CupomDiv>
-            
-          </CupomDiv>
-        </ContainerCart>
+        <CardShoppingCart/>
+        <ContainetAdress>
+          <TextAddres>Delivery Addres:</TextAddres>
+          <AddresInput type="text" placeholder='             
+          Rua
+          /N°
+          /Bairro
+          /Cidade
+          /Cep'/>
+        </ContainetAdress>
+        <CupomDiv>
+          <TextInput>Coupon</TextInput>
+          <InputCupom type="text" />
+        </CupomDiv>
+        <PurDiv>
+          <p>Total: $2,50</p>
+          <Purchase onClick={confimPurchase}>Purchase</Purchase>
+        </PurDiv>
       </Drawer>
     </div>
   );
