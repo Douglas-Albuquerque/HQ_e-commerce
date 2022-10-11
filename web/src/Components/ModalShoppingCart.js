@@ -14,7 +14,7 @@ const ModalShoppingCart = ({ id = "modal", onClose = () => { } }) => {
       <ModalContent>
         <CloseButtom onClick={onClose} />
         
-        {/* <EmptyCartImg src={emptyCart} /> */}
+        <EmptyCartImg src={emptyCart} />
       </ModalContent>
     </ModalContainer>
   )
