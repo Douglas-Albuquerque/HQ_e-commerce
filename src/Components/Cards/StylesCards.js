@@ -45,7 +45,7 @@ export const CardText = styled.div`
 `
 export const RareTicket = styled.div`
   display: flex;
-  width: 5.4rem;
+  width: 5.0rem;
   height: 1.8rem;
   border: solid 2.8rem transparent;
   border-bottom: solid 2.8rem #daa520;
