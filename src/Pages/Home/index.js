@@ -54,38 +54,38 @@ class HomePage extends Component {
 
   render() {
 
-    const dataSimpleCard = [
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50",
-      },
-    ]
+    // const dataSimpleCard = [
+    //   {
+    //     id: '1',
+    //     title: 'Venom de volta ao lar',
+    //     imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+    //     price: "2,50",
+    //   },
+    //   {
+    //     id: '1',
+    //     title: 'Venom de volta ao lar',
+    //     imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+    //     price: "2,50",
+    //   },
+    //   {
+    //     id: '1',
+    //     title: 'Venom de volta ao lar',
+    //     imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+    //     price: "2,50",
+    //   },
+    //   {
+    //     id: '1',
+    //     title: 'Venom de volta ao lar',
+    //     imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+    //     price: "2,50",
+    //   },
+    //   {
+    //     id: '1',
+    //     title: 'Venom de volta ao lar',
+    //     imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+    //     price: "2,50",
+    //   },
+    // ]
 
     const data = this.state.data
     return (
@@ -94,8 +94,9 @@ class HomePage extends Component {
         {/* <button onClick={this.teste}>teste</button> */}
         <main>
           <ContainerCards>
-            {data.map((item, id) => <RareCard key={id} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
-            {dataSimpleCard.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
+            {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
+            {data.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
+            {/* {dataSimpleCard.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.imgUrl} price={item.price} />)} */}
           </ContainerCards>
           <ArrowButtons>
             <ImgArrowButtom><img src={scrollButtom} alt="" /></ImgArrowButtom>
