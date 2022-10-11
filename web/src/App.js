@@ -1,4 +1,3 @@
-import HomePage from "./Pages/Home";
 import RoutePage from "./Router/index"
 
 function App() {

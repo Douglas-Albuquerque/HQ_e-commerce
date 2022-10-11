@@ -13,14 +13,6 @@ class DetailPage extends Component {
   }
 
   render() {
-    const dataDatailCard = [
-      {
-        id: '1',
-        title: 'Venom de volta ao lar',
-        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
-        price: "2,50"
-      },
-    ]
     return (
       <BodyContainer>
         <NavBar />

@@ -10,16 +10,8 @@ import Modal from './Modal';
 const NavBar = () => {
 
   const [visibleShoppingCart, setvisibleShoppingCart] = useState(false);
-  const navigateReg = useNavigate();
-  const navigateLog = useNavigate();
   const navigateNot = useNavigate();
 
-  const navRegister = () => {
-    navigateReg('/register')
-  }
-  const navLogin = () => {
-    navigateLog('/')
-  }
   const navNotFound = () => {
     navigateNot('/*')
   }
