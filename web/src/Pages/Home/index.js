@@ -43,11 +43,11 @@ class HomePage extends Component {
     }
 
   }
-  teste = async () => {
+  // teste = async () => {
 
-    console.log(this.state.data[4].prices[0].price);
+  //   console.log(this.state.data[4].prices[0].price);
 
-  }
+  // }
   
 
   render() {
@@ -59,12 +59,36 @@ class HomePage extends Component {
         imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
         price: "2,50",
       },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
+      {
+        id: '1',
+        title: 'Venom de volta ao lar',
+        imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
+        price: "2,50",
+      },
     ]
     const data = this.state.data
     return (
       <BodyContainer>
         <NavBar />
-        <button onClick={this.teste}>teste</button>
+        {/* <button onClick={this.teste}>teste</button> */}
         <main>
           <ContainerCards>
             {/* {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)} */}

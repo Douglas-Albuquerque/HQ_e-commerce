@@ -1,7 +1,7 @@
 import { Component, } from "react";
 import Footer from "../../Components/Footer";
 import NavBar from "../../Components/NavBar";
-import { BodyContainer, ContainerCards } from "../Home/Styles";
+import { BodyContainer } from "../Home/Styles";
 import { ContainerCardsDetail, ContainerImg, ImgCard, LiCardDetail, LiDataCards } from "./styles";
 
 
@@ -19,7 +19,7 @@ class DetailPage extends Component {
         title: 'Venom de volta ao lar',
         imgUrl: "https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg",
         price: "2,50"
-      }
+      },
     ]
     return (
       <BodyContainer>

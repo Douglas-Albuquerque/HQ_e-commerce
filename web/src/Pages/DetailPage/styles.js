@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ContainerCards } from "../Home/Styles"
+
 
 export const LiCardDetail = styled.div`
   width: 25rem;

@@ -18,7 +18,7 @@ export const ContainerCards = styled.ul`
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 90%;
+  width: 60rem;
   margin: auto;
   margin-top: 0.9rem;
 `

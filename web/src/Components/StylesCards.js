@@ -43,7 +43,6 @@ export const CardText = styled.div`
     overflow-wrap: brake-word;  
   }
 `
-
 export const RareTicket = styled.div`
   display: flex;
   width: 5.4rem;

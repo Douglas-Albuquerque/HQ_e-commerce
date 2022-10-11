@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import { MdShoppingCart, MdHome } from "react-icons/md";
 
 import marvelLogo from '../Assets/Marvel_Logo.png'
 import { NavButtons, LogoImg, NavStyle, ContainerUl, ListButtom } from './StylesNavBar';
+import Modal from './Modal';
 
 
 const NavBar = () => {
 
+  const [visibleShoppingCart, setvisibleShoppingCart] = useState(false);
   const navigateReg = useNavigate();
   const navigateLog = useNavigate();
   const navigateNot = useNavigate();
@@ -35,7 +37,10 @@ const NavBar = () => {
             <p onClick={navNotFound}><MdHome /></p>
           </ListButtom>
           <ListButtom>
-            <p onClick={navLogin}> <MdShoppingCart /></p>
+            <p onClick={() => setvisibleShoppingCart(true)}><MdShoppingCart /></p>
+            {(visibleShoppingCart)
+              ? <Modal onClose={() => setvisibleShoppingCart(false)}/>
+              : null}
           </ListButtom>
         </ContainerUl>
       </NavButtons>
