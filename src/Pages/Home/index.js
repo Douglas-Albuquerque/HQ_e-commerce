@@ -23,7 +23,7 @@ class HomePage extends Component {
       }
       await fetch(url, header)
         .then(
-          async response => response.json()
+          async response => await response.json()
         )
 
         .then(

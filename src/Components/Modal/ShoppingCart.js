@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Drawer } from 'antd';
 import { MdShoppingCart } from "react-icons/md";
 import "./style.css";
+import { ImgShopCart } from './StyledShoppingCart';
 
 
 const ShoppingCart = () => {
@@ -20,9 +21,9 @@ const ShoppingCart = () => {
       <p ><MdShoppingCart onClick={showDrawer}/></p>
 
       <Drawer className='ant-drawer-content' title="Carrinho" placement="right" onClose={onClose} open={open}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <div>
+        <ImgShopCart src="https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg" alt="" />
+        </div>
       </Drawer>
     </div>
   );
