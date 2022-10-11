@@ -3,7 +3,6 @@ import NavBar from '../../Components/NavBar/NavBar'
 import SimpleCard from "../../Components/Cards/SimpleCard";
 import RareCard from '../../Components/Cards/RareCard';
 import Footer from '../../Components/Footer/Footer';
-import { useParams } from 'react-router-dom'
 
 import scrollButtom from "../../Assets/scrollButtom.png"
 import { ArrowButtons, BodyContainer, ContainerCards, ImgArrowButtom } from './Styles';
@@ -45,14 +44,14 @@ class HomePage extends Component {
     }
 
   }
-  
-  teste = async () => {
 
-    console.log(this.state.data[13]);
+  // teste = async () => {
 
-  }
-  
-  
+  //   console.log(this.state.data[13]);
+
+  // }
+
+
   render() {
 
     const dataSimpleCard = [
@@ -87,12 +86,12 @@ class HomePage extends Component {
         price: "2,50",
       },
     ]
-    
+
     const data = this.state.data
     return (
       <BodyContainer>
         <NavBar />
-        <button onClick={this.teste}>teste</button>
+        {/* <button onClick={this.teste}>teste</button> */}
         <main>
           <ContainerCards>
             {data.map((item, id) => <RareCard key={id} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
@@ -103,7 +102,7 @@ class HomePage extends Component {
             <ImgArrowButtom><img src={scrollButtom} alt="" /></ImgArrowButtom>
           </ArrowButtons>
         </main>
-        <Footer/>
+        <Footer />
       </BodyContainer>
     )
   }

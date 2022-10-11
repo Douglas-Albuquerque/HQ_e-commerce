@@ -1,11 +1,9 @@
-import RoutePage from "./Router/index";
-
+import RoutePage from "./Router/index"
 
 function App() {
-
   return (
     <div>
-        <RoutePage />
+      <RoutePage />
     </div>
   );
 }
