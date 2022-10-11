@@ -1,4 +1,4 @@
-import { DeveloperText, FooterContainer, Icons, SocialIcons } from "./StylesFooter"
+import { EncorpText, FooterContainer, Icons, SocialIcons } from "./StylesFooter"
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 
@@ -6,16 +6,16 @@ const Footer = () => {
   return (
     <FooterContainer>
       <SocialIcons>
-        <Icons>
+        <Icons href="https://www.linkedin.com/in/douglas-albuquerque-739531a6/" target="_blank">
           <AiFillLinkedin />
         </Icons>
-        <Icons>
+        <Icons href="https://github.com/Douglas-Albuquerque" target="_blank">
           <AiFillGithub />
         </Icons>
       </SocialIcons>
-      <DeveloperText>
+      <EncorpText>
         <p>Marvel Comics</p>&copy;
-      </DeveloperText>
+      </EncorpText>
     </FooterContainer>
   )
 }

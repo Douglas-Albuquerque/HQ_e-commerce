@@ -24,14 +24,17 @@ export const SocialIcons = styled.ul`
   align-items: center;
   margin: 5px 35px 0 0;
 `
-export const Icons = styled.div`
+export const Icons = styled.a`
   margin-left: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
   &:hover{
     color: red;
     cursor: pointer;
   }
+
 `
-export const DeveloperText = styled(SocialIcons)`
+export const EncorpText = styled(SocialIcons)`
   justify-content: end;
   font-size: 0.8rem;
   align-items: baseline;
