@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import HomePage from '../Home/index'
+import HomePage from '../Pages/Home/index'
 
 
 const RoutePage = () => {
   return (
     <Router>
-      <Route>
-        <Route path="/" element={<HomePage/>} />
-      </Route>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </Router>
   )
 }
