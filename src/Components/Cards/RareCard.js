@@ -2,7 +2,7 @@ import capaGen from "../../Assets/capaGenerica.png"
 import { useNavigate } from "react-router-dom";
 import { CardText, ContainerImg, ImgCard, LiRareCard, RareTicket, TextRare } from "./StylesCards"
 
-const RareCard = ({ title, imgUrl, price, id }) => {
+const RareCard = ({ title, imgUrl, price }) => {
 
   let imageCover = ""
   if (imgUrl[0] === undefined) {
