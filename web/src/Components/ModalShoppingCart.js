@@ -2,9 +2,9 @@ import React from 'react'
 import emptyCart from "../Assets/empty-cart.png"
 
 
-import { CloseButtom, ModalContainer, ModalContent, EmptyCartImg } from "./stylesModal"
+import { CloseButtom, ModalContainer, ModalContent, EmptyCartImg } from "./StylesModalShoppingCart"
 
-const Modal = ({ id = "modal", onClose = () => { } }) => {
+const ModalShoppingCart = ({ id = "modal", onClose = () => { } }) => {
 
   const clickOutsideClose = (e) => {
     if (e.target.id === id) onClose();
@@ -13,10 +13,11 @@ const Modal = ({ id = "modal", onClose = () => { } }) => {
     <ModalContainer id={id} onClick={clickOutsideClose}>
       <ModalContent>
         <CloseButtom onClick={onClose} />
-        <EmptyCartImg src={emptyCart}/>
+        
+        {/* <EmptyCartImg src={emptyCart} /> */}
       </ModalContent>
     </ModalContainer>
   )
 }
 
-export default Modal
+export default ModalShoppingCart

@@ -19,8 +19,6 @@ export const ModalContent = styled.div`
   top: 0;
   right: 0;
   cursor: default;
-  display: flex;
-  justify-content: center;
 `
 export const CloseButtom = styled.div`
   background-color: transparent;
@@ -32,7 +30,7 @@ export const CloseButtom = styled.div`
   display: flex;
   position: relative;
   align-items: center;
-  right: calc(100% - 20.75rem);
+  /* right: calc(100% - 20.75rem); */
 
   &:before,
   &:after{

@@ -91,7 +91,7 @@ class HomePage extends Component {
         {/* <button onClick={this.teste}>teste</button> */}
         <main>
           <ContainerCards>
-            {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
+            {/* {data.map((item, i) => <RareCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)} */}
             {dataSimpleCard.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.imgUrl} price={item.price} />)}
           </ContainerCards>
           <ArrowButtons>
