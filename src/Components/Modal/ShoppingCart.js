@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Drawer } from 'antd';
 import { MdShoppingCart } from "react-icons/md";
 import "./style.css";
-import { AddresInput, ContainetAdress, CupomDiv,InputCupom, Purchase, PurDiv, TextAddres, TextInput} from './StyledShoppingCart';
+import { AddresInput, ContainetAdress, CupomDiv, InputCupom, Purchase, PurDiv, TextAddres, TextInput } from './StyledShoppingCart';
 import CardShoppingCart from '../CardShoppingCard/CardShoppingCart';
 
 
@@ -24,8 +24,8 @@ const ShoppingCart = () => {
     <div>
       <p ><MdShoppingCart onClick={showDrawer} /></p>
 
-      <Drawer className='ant-drawer-content' title="Carrinho" placement="right" onClose={onClose} open={open}>
-        <CardShoppingCart/>
+      <Drawer className='ant-drawer-content' title="Shopping Cart" placement="right" onClose={onClose} open={open}>
+        <CardShoppingCart />
         <ContainetAdress>
           <TextAddres>Delivery Addres:</TextAddres>
           <AddresInput type="text" placeholder='             

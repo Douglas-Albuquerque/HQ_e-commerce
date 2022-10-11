@@ -27,7 +27,7 @@ const RareCard = ({ title, imgUrl, price }) => {
           <TextRare>Raro</TextRare>
         </RareTicket>
         <ContainerImg>
-          <ImgCard onClick={navDetail} src={imageCover} alt=""/>
+          <ImgCard id="img" onClick={navDetail} src={imageCover} alt=""/>
         </ContainerImg>
         <CardText>
           <p>{title}</p>

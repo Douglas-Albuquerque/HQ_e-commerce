@@ -13,6 +13,7 @@ export const AddresInput = styled.input`
   background-color: #DED9D9;
   border: 0.15rem solid #000;
   border-radius: 0.5rem;
+  padding: 0.5rem;
 `
 
 export const TextAddres = styled.p`
