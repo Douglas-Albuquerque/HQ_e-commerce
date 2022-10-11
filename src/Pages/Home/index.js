@@ -16,7 +16,7 @@ class HomePage extends Component {
   }
 
   async componentDidMount() {
-    const url = "http://gateway.marvel.com/v1/public/comics?ts=1665019512347&apikey=5a1ba5f255f58d9125b7a76d5a30a652&hash=7d1420e9be5449cf737f134a12d2fcbd"
+    const url = "https://gateway.marvel.com/v1/public/comics?ts=1665019512347&apikey=5a1ba5f255f58d9125b7a76d5a30a652&hash=7d1420e9be5449cf737f134a12d2fcbd"
     try {
       const header = {
         method: "GET"
