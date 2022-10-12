@@ -39,3 +39,22 @@ export const ImgArrowButtom = styled.button`
   border: none;
   cursor: pointer;
 `
+export const MainContainer = styled.div`
+  display: flex; 
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+`
+export const PageButtons = styled.button`
+  background-color: #8E8E8E;
+  border-radius: 1rem;
+  border: none;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  &:hover{
+    cursor: pointer;
+    background-color: #777777;
+    transition: 3ms; 
+  }
+`

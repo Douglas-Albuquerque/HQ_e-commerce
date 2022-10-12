@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { dataCard } from "../../Redux/cardSlice"
 
 
-import { BodyContainer, ContainerCards } from './Styles';
+import { BodyContainer, ContainerCards, MainContainer, PageButtons } from './Styles';
 
 
 const HomePage = () => {
@@ -66,20 +66,21 @@ const HomePage = () => {
         <NavBar />
       </div>
       <div>
-        <main style={{ display: "flex", flex: 1, flexDirection: "column", alignItems: "center" }}>
+        <MainContainer>
           <ContainerCards>
             {currentItens.map((item, i) => <RareCard randId={random} key={i} id={item.id} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
           </ContainerCards>
           <div>
             {Array.from(Array(pages), (item, index) => {
-              return <button value={index} onClick={(e) => setCurrentPage(Number(e.target.value))}>{index}</button>
+              return <PageButtons value={index} onClick={(e) => setCurrentPage(Number(e.target.value))}> {index}</PageButtons>
             })}
           </div>
-        </main>
+        </MainContainer>
       </div>
       <div >
         <Footer />
       </div>
+
     </BodyContainer >
   )
 
