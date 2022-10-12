@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Drawer } from 'antd';
 import { MdShoppingCart } from "react-icons/md";
 import "./style.css";
-import { AddresInput, ContainerCart, ContainetAdress, CupomDiv, EmptyCart, ImgItem, InputCupom, Purchase, PurDiv, TextAddres, TextInput, TitleItem } from './StyledShoppingCart';
+import { AddresInput, ContainerCart, ContainetAdress, CupomDiv, EmptyCart, EmptyContainer, ImgItem, InputCupom, Purchase, PurDiv, TextAddres, TextInput, TitleItem } from './StyledShoppingCart';
 import { useSelector, useDispatch } from 'react-redux';
 import { setTitle, setImage, setPrice } from '../../Redux/cardSlice';
 import emptyCart from "../../Assets/empty-cart.png"
@@ -58,9 +58,9 @@ const ShoppingCart = ({ price, title, image }) => {
             </PurDiv>
           </div>
           :
-          <div>
+          <EmptyContainer>
             <EmptyCart src={emptyCart} alt="" />
-          </div>
+          </EmptyContainer>
         }
       </Drawer>
     </div>
