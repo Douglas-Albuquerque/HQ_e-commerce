@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;
-  min-width: 100vh;
   background: rgb(147, 21, 21);
   background: radial-gradient(
     circle,
@@ -12,15 +11,20 @@ export const BodyContainer = styled.div`
     rgba(164, 14, 14, 0.9615196420365021) 100%
   );
   font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
 `
 export const ContainerCards = styled.ul`
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 60rem;
+  width: 59rem;
   margin: auto;
-  margin-top: 0.9rem;
+  margin-top: 0.2rem;
 `
 export const ArrowButtons = styled.div`
   width: 100%;
