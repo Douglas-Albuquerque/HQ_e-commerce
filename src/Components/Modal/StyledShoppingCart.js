@@ -82,3 +82,6 @@ export const TitleItem = styled.div`
   font-size: 1rem;
   margin: auto;
 `
+export const EmptyCart = styled.img`
+  width: 15rem;
+`

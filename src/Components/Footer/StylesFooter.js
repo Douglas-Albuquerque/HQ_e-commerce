@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
   display: flex;
+  justify-content: flex-end;
   color: white;
   height: 2rem;
   padding: 1em;

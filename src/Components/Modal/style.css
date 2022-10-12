@@ -23,25 +23,29 @@
   top: 0;
   bottom: 0;
   left: 0;
-  box-shadow: 6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05), 12px 0 48px 16px rgba(0, 0, 0, 0.03);
+  box-shadow: 6px 0 16px -8px rgba(0, 0, 0, 0.08),
+    9px 0 28px 0 rgba(0, 0, 0, 0.05), 12px 0 48px 16px rgba(0, 0, 0, 0.03);
 }
 .ant-drawer-right > .ant-drawer-content-wrapper {
   top: 0;
   right: 0;
   bottom: 0;
-  box-shadow: -6px 0 16px -8px rgba(0, 0, 0, 0.08), -9px 0 28px 0 rgba(0, 0, 0, 0.05), -12px 0 48px 16px rgba(0, 0, 0, 0.03);
+  box-shadow: -6px 0 16px -8px rgba(0, 0, 0, 0.08),
+    -9px 0 28px 0 rgba(0, 0, 0, 0.05), -12px 0 48px 16px rgba(0, 0, 0, 0.03);
 }
 .ant-drawer-top > .ant-drawer-content-wrapper {
   top: 0;
   right: 0;
   left: 0;
-  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.08),
+    0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
 }
 .ant-drawer-bottom > .ant-drawer-content-wrapper {
   right: 0;
   bottom: 0;
   left: 0;
-  box-shadow: 0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05), 0 -12px 48px 16px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 -6px 16px -8px rgba(0, 0, 0, 0.08),
+    0 -9px 28px 0 rgba(0, 0, 0, 0.05), 0 -12px 48px 16px rgba(0, 0, 0, 0.03);
 }
 .ant-drawer-content {
   width: 100%;
@@ -71,6 +75,7 @@
   align-items: center;
   min-width: 0;
   min-height: 0;
+  font-family: 'Playfair Display', serif;
 }
 .ant-drawer-extra {
   flex: 0;
