@@ -1,11 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { MdHome } from "react-icons/md";
-import  ShoppingCart  from "../Modal/ShoppingCart"
+import ShoppingCart from "../Modal/ShoppingCart"
 
 import marvelLogo from '../../Assets/Marvel_Logo.png'
 import { NavButtons, LogoImg, NavStyle, ContainerUl, ListButtom } from './StylesNavBar';
-
-
 
 
 const NavBar = () => {

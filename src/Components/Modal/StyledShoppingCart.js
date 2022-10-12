@@ -8,12 +8,15 @@ export const ContainetAdress = styled.div`
   margin-bottom: 0;
 `
 export const AddresInput = styled.input`
-  width: 17rem;
-  height: 6rem;
   background-color: #DED9D9;
   border: 0.15rem solid #000;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  box-sizing: content-box;
+  width: 100%;
+  padding: 5px;
+  width: 17rem;
+  height: 6rem;
 `
 
 export const TextAddres = styled.p`
@@ -65,4 +68,17 @@ export const Purchase = styled.button`
     background-color: #777777;
     transition: 3ms;
   }
+`
+export const ContainerCart = styled.div`
+  display: flex;
+  justify-content: start;
+  font-family: 'Playfair Display', serif;
+`
+export const ImgItem = styled.img`
+  width: 5rem;
+  border-radius: 0.5rem;
+`
+export const TitleItem = styled.div`
+  font-size: 1rem;
+  margin: auto;
 `

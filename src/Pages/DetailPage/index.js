@@ -1,39 +1,51 @@
-import { Component, } from "react";
 import Footer from "../../Components/Footer/Footer";
 import NavBar from "../../Components/NavBar/NavBar";
 import { BodyContainer } from "../Home/Styles";
 import { ContainerCardsDetail, ContainerImg, ImgCard, LiCardDetail, LiDataCards } from "./styles";
+import { useParams } from "react-router-dom";
+import { useSelector } from 'react-redux';
+
+import capaGen from "../../Assets/capaGenerica.png"
+
+const DetailPage = () => {
+  const state = useSelector(state => state.user)
+  const { id } = useParams();
+  const found = state.name.find(element => element.id == id)
 
 
-class DetailPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
+  let imageCover = ""
+  let pricing = ""
+  let CreatorsName = ""
+  let descrip = ""
+  { (found.images[0] === undefined) ? imageCover = capaGen : imageCover = found.images[0].path + ".jpg" }
+  { (found.prices[0].price === 0) ? pricing = 0.13 : pricing = found.prices[0].price }
+  { (found.creators.items.length === 0) ? CreatorsName = "unknown" : CreatorsName = found.creators.items[0].name }
+  { (found.description === "") ? descrip = "unknown" : descrip = found.description }
 
-  render() {
-    return (
-      <BodyContainer>
-        <NavBar />
-        <main>
-          <ContainerCardsDetail>
-            <LiCardDetail>
-              <ContainerImg>
-                <ImgCard src={"https://m.media-amazon.com/images/I/51eRW4vTUJL._SX323_BO1,204,203,200_.jpg"}/>
-              </ContainerImg>
-            </LiCardDetail>
-            <LiDataCards>
-              <p>Title: Venom de volta ao lar</p>
-              <p>Price: $2,50</p>
-              <p>Creator: Mike Costa</p>
-              <p>Description: O simbionte Venom vaga pelas ruas de Nova York procurando por um novo hospedeiro! Em sua busca, a criatura cruza com Lee Price, um homem com um passado traumático e sem nada mais a perder, tentando conseguir algum dinheiro como capanga.</p>
-            </LiDataCards>
-          </ContainerCardsDetail>  
-        </main>
-        <Footer />
-      </BodyContainer>
-    )
-  }
+  console.log(found);
+
+
+  return (
+    <BodyContainer>
+      <NavBar />
+      <main>
+        <ContainerCardsDetail>
+          <LiCardDetail>
+            <ContainerImg>
+              <ImgCard src={imageCover} />
+            </ContainerImg>
+          </LiCardDetail>
+          <LiDataCards>
+            <p>{found.title}</p>
+            <p>Price: ${pricing}</p>
+            <p>Creator: {CreatorsName}</p>
+            <p>{descrip}</p>
+          </LiDataCards>
+        </ContainerCardsDetail>
+      </main>
+      <Footer />
+    </BodyContainer>
+  )
+
 }
 export default DetailPage
