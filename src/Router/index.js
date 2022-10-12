@@ -9,7 +9,7 @@ const RoutePage = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/detail" element={<DetailPage/>} />
+        <Route path="/detail/:id" element={<DetailPage />} />
       </Routes>
     </Router>
   )
