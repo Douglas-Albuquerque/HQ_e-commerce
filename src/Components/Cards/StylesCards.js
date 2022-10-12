@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const LiCards = styled.li`
-  width: 12.1rem;
-  height: 20.3rem;
+  width: 10.1rem;
+  height: 15.3rem;
   background-color: #00000040;
   list-style: none;
-  margin: 0.6rem 6.2rem 1.2rem 0.6rem;
+  margin: 0.1rem 2rem;
   border-radius: 0.6rem;
   box-shadow: 0.2rem 0.2rem 0.3rem #000000;
 `
@@ -22,11 +22,11 @@ export const LiRareCard = styled(LiCards)`
 export const ContainerImg = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 0.9rem;
+  margin-top: 0.7rem;
 `
 export const ImgCard = styled.img`
-  width: 10rem;
-  height: 14.3rem;
+  width: 8rem;
+  height: 9.5rem;
   object-fit: contain;
   align-self: center;
   margin-top: 0.9rem;
@@ -41,7 +41,7 @@ export const CardText = styled.div`
   line-height: 0.3rem;
   margin-left: 0.37rem;
   overflow: hidden;
-  max-width: 18ch;
+  max-width: 15ch;
   white-space: nowrap;
   text-overflow: ellipsis; 
   & p {

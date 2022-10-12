@@ -77,6 +77,7 @@ export const ContainerCart = styled.div`
 export const ImgItem = styled.img`
   width: 5rem;
   border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000;
 `
 export const TitleItem = styled.div`
   font-size: 1rem;
@@ -84,4 +85,9 @@ export const TitleItem = styled.div`
 `
 export const EmptyCart = styled.img`
   width: 15rem;
+
+`
+export const EmptyContainer = styled.div`
+  display: flex;
+  justify-content: center;
 `
