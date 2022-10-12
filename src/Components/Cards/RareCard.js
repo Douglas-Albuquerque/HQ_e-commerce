@@ -1,21 +1,16 @@
 import capaGen from "../../Assets/capaGenerica.png"
 import { useNavigate } from "react-router-dom";
-import { CardText, ContainerImg, ImgCard, LiRareCard, RareTicket, TextRare } from "./StylesCards"
+import { CardText, ContainerImg, ImgCard, LiRareCard, PurchaseButtom, RareTicket, TextRare } from "./StylesCards"
+import ShoppingCart from "../Modal/ShoppingCart";
 
-const RareCard = ({ id, title, imgUrl, price, pageCount, description }) => {
+const RareCard = ({ id, title, imgUrl, price }) => {
 
 
   let imageCover = ""
   let pricing = ""
-  let viewPageCount = ""
-  let descrip = ""
   { (imgUrl[0] === undefined) ? imageCover = capaGen : imageCover = imgUrl[0].path + ".jpg" }
   { (price === 0) ? pricing = 0.13 : pricing = price }
-  { (pageCount === undefined) ? viewPageCount = "unknown" : viewPageCount = pageCount }
-  { (description === "") ? descrip = "unknown" : descrip = description }
   const navigateDetail = useNavigate();
-
-  const array = [{ pricing, descrip, title }]
 
   const navDetail = () => {
     navigateDetail(
@@ -34,6 +29,9 @@ const RareCard = ({ id, title, imgUrl, price, pageCount, description }) => {
         <CardText>
           <p>{title}</p>
           <p>Price:${pricing}</p>
+          <PurchaseButtom>
+            <ShoppingCart id={id} title={title} price={pricing} image={imageCover} />
+          </PurchaseButtom>
         </CardText>
       </LiRareCard>
     </div>
