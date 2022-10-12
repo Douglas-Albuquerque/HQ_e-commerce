@@ -3,7 +3,7 @@ import NavBar from '../../Components/NavBar/NavBar'
 import SimpleCard from "../../Components/Cards/SimpleCard";
 import RareCard from '../../Components/Cards/RareCard';
 import Footer from '../../Components/Footer/Footer';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { dataCard } from "../../Redux/cardSlice"
 
 
@@ -13,7 +13,6 @@ import { ArrowButtons, BodyContainer, ContainerCards, ImgArrowButtom } from './S
 
 const HomePage = () => {
   const dispatch = useDispatch();
-  const state = useSelector(state => state.user)
   const [data, setData] = useState([]);
 
   const reqApi = async () => {

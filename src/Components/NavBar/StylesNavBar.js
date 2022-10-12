@@ -6,15 +6,14 @@ export const NavStyle = styled.nav`
   font-family: 'Playfair Display', serif;
   max-height: 5.6rem;
   background-image: url('https://imgs.extra.com.br/1517619252/1xg.jpg');
-
-`;
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000
+`
 export const ContainerUl = styled.ul`
   display: flex;
   list-style: none;
   align-items: center;
   color: #ffffff;
-
-`;
+`
 export const NavButtons = styled(NavStyle)`
   max-height: 1.8rem;
   background: rgb(32, 27, 27);

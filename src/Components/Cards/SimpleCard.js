@@ -1,6 +1,7 @@
 import capaGen from "../../Assets/capaGenerica.png"
 import { useNavigate } from "react-router-dom";
-import { CardText, ContainerImg, ImgCard, LiCards } from "./StylesCards"
+import { CardText, ContainerImg, ImgCard, LiCards, PurchaseButtom } from "./StylesCards"
+import ShoppingCart from "../Modal/ShoppingCart";
 
 const SimpleCard = ({ id, title, imgUrl, price }) => {
 
@@ -32,6 +33,9 @@ const SimpleCard = ({ id, title, imgUrl, price }) => {
         <CardText>
           <p>{title}</p>
           <p>Price: ${pricing}</p>
+          <PurchaseButtom>
+            <ShoppingCart id={id} title={title} price={pricing} image={imageCover} />
+          </PurchaseButtom>
         </CardText>
       </LiCards>
     </div>

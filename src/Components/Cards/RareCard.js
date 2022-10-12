@@ -8,8 +8,16 @@ const RareCard = ({ id, title, imgUrl, price }) => {
 
   let imageCover = ""
   let pricing = ""
-  { (imgUrl[0] === undefined) ? imageCover = capaGen : imageCover = imgUrl[0].path + ".jpg" }
-  { (price === 0) ? pricing = 0.13 : pricing = price }
+  if (imgUrl[0] === undefined) {
+    imageCover = capaGen
+  } else {
+    imageCover = imgUrl[0].path + ".jpg"
+  }
+  if (price === 0) {
+    pricing = 0.13
+  } else {
+    pricing = price
+  }
   const navigateDetail = useNavigate();
 
   const navDetail = () => {

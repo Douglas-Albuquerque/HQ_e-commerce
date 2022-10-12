@@ -17,10 +17,24 @@ const DetailPage = () => {
   let pricing = ""
   let CreatorsName = ""
   let descrip = ""
-  { (found.images[0] === undefined) ? imageCover = capaGen : imageCover = found.images[0].path + ".jpg" }
-  { (found.prices[0].price === 0) ? pricing = 0.13 : pricing = found.prices[0].price }
-  { (found.creators.items.length === 0) ? CreatorsName = "unknown" : CreatorsName = found.creators.items[0].name }
-  { (found.description === "") ? descrip = "unknown" : descrip = found.description }
+  if (found.images[0] === undefined) {
+    imageCover = capaGen
+  } else {
+    imageCover = found.images[0].path + ".jpg"
+  }
+  if (found.prices[0].price === 0) {
+    pricing = 0.13
+  } else {
+    pricing = found.prices[0].price
+  }
+  if (found.creators.items.length === 0) {
+    CreatorsName = "unknown"
+  } else {
+    CreatorsName = found.creators.items[0].name
+  }
+  if (found.description === "") {
+    descrip = "unknown"
+  } else { descrip = found.description }
 
   console.log(found);
 

@@ -7,6 +7,7 @@ export const LiCards = styled.li`
   list-style: none;
   margin: 0.6rem 6.2rem 1.2rem 0.6rem;
   border-radius: 0.6rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000;
 `
 export const LiRareCard = styled(LiCards)`
     background: rgb(0, 44, 131);
@@ -16,6 +17,7 @@ export const LiRareCard = styled(LiCards)`
     rgba(3, 132, 140, 0.4853291658460259) 48%,
     rgba(0, 44, 131, 1) 100%
   );
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000;
 `
 export const ContainerImg = styled.div`
   display: flex;
@@ -65,11 +67,14 @@ export const TextRare = styled.p`
   color: #ffffff;
 `
 export const PurchaseButtom = styled.div`
+  margin: auto;
   background-color: #8E8E8E;
   border: none;
   border-radius: 1rem;
-  width: 5rem;
+  width: 2rem;
   font-weight: bold;
+  color: #000000;
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000;
   &:hover{
     cursor: pointer;
     background-color: #777777;
