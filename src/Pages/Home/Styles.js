@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const BodyContainer = styled.div`
   min-height: 100vh;
+  min-width: 37vh;
+  max-width: 100%;
   background: rgb(147, 21, 21);
   background: radial-gradient(
     circle,
@@ -17,12 +19,14 @@ export const BodyContainer = styled.div`
   justify-content: space-between;
 `
 export const ContainerCards = styled.ul`
-  height: 100vh;
+  min-height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 59rem;
+  min-width: 20rem;
+  max-width: 59rem;
   margin: auto;
   margin-top: 0.2rem;
 `
