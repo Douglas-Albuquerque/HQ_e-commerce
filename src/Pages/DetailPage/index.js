@@ -8,8 +8,8 @@ import { useSelector } from 'react-redux';
 import capaGen from "../../Assets/capaGenerica.png"
 
 const DetailPage = () => {
-  const { id } = useParams();
   const state = useSelector(state => state.user)
+  const { id } = useParams();
   const found = state.name.find(element => element.id == id)
 
 
@@ -19,10 +19,10 @@ const DetailPage = () => {
   let descrip = ""
   { (found.images[0] === undefined) ? imageCover = capaGen : imageCover = found.images[0].path + ".jpg" }
   { (found.prices[0].price === 0) ? pricing = 0.13 : pricing = found.prices[0].price }
-  { (found.creators.items[0].name === undefined) ? CreatorsName = "unknown" : CreatorsName = found.creators.items[0].name }
+  { (found.creators.items.length === 0) ? CreatorsName = "unknown" : CreatorsName = found.creators.items[0].name }
   { (found.description === "") ? descrip = "unknown" : descrip = found.description }
 
-  console.log(found.creators.items[0].name);
+  console.log(found);
 
 
   return (

@@ -64,3 +64,14 @@ export const TextRare = styled.p`
   margin-left: 0.9rem;
   color: #ffffff;
 `
+export const PurchaseButtom = styled.button`
+  background-color: #8E8E8E;
+  border: none;
+  border-radius: 1rem;
+  width: 5rem;
+  &:hover{
+    cursor: pointer;
+    background-color: #777777;
+    transition: 3ms; 
+  }
+`

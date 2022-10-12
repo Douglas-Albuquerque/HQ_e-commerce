@@ -32,8 +32,8 @@ const HomePage = () => {
             const dataZ = response.data.results
             const found = dataZ.find(element => element.id == 428)
             dispatch(dataCard(response.data.results))
-            // console.log(found);
-            //console.log(response.data.results);
+            //console.log(found);
+            console.log(response.data.results[4].creators.items);
             // console.log(response.data.results[6].title);
             // console.log(response.data.results[5].pageCount);
             // console.log(response.data.results[5].prices[0].price);
@@ -94,7 +94,7 @@ const HomePage = () => {
       <main>
         <ContainerCards>
           {data.map((item, i) => <RareCard key={i} id={item.id} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
-          {data.map((item, i) => <SimpleCard key={i} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
+          {data.map((item, i) => <SimpleCard key={i} id={item.id} title={item.title} imgUrl={item.images} price={item.prices[0].price} />)}
         </ContainerCards>
         <ArrowButtons>
           <ImgArrowButtom><img src={scrollButtom} alt="" /></ImgArrowButtom>
