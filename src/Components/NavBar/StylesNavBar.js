@@ -29,6 +29,7 @@ export const LogoImg = styled.img`
   height: 5.6rem;
   cursor: pointer;
   margin-right: 4rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000;
 `
 export const ListButtom = styled.li`
   margin-right: 4.3rem;

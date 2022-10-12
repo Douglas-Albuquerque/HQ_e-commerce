@@ -13,7 +13,7 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const [data, setData] = useState([]);
   const [random, setRandom] = useState();
-  const [itensPerPage, setItensPerPage] = useState(6);
+  const [itensPerPage, setItensPerPage] = useState(8);
   const [currentPage, setCurrentPage] = useState(0);
 
   const pages = Math.ceil(data.length / itensPerPage)

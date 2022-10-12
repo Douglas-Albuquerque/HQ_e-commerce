@@ -8,6 +8,7 @@ export const LiCardDetail = styled.div`
   list-style: none;
   margin: 0.6rem 6.2rem 1.2rem 0.6rem;
   border-radius: 0.6rem;
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000;
 `
 export const ContainerCardsDetail = styled.ul`
   display: flex;
@@ -24,6 +25,7 @@ export const LiDataCards = styled.li`
   flex: 1;
   flex-direction: column;
   color: #FFFFFF;
+  
 `
 export const ContainerImg = styled.div`
   display: flex;

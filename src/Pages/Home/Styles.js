@@ -52,6 +52,7 @@ export const PageButtons = styled.button`
   margin-left: 0.5rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  box-shadow: 0.2rem 0.2rem 0.3rem #000000;
   &:hover{
     cursor: pointer;
     background-color: #777777;
