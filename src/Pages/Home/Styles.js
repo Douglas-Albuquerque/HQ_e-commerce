@@ -53,6 +53,7 @@ export const PageButtons = styled.button`
   background-color: #8E8E8E;
   border-radius: 1rem;
   border: none;
+  margin-top: 0.6rem;
   margin-left: 0.5rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
