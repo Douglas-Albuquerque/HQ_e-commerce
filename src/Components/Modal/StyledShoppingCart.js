@@ -2,28 +2,30 @@ import styled from "styled-components"
 
 
 export const ContainetAdress = styled.div`
-  width: 18rem;
-  height: 8rem;
   margin: 1rem;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+
 `
 export const AddresInput = styled.input`
   background-color: #DED9D9;
-  border: 0.15rem solid #000;
+  border: none;
   border-radius: 0.5rem;
-  padding: 0.5rem;
-  box-sizing: content-box;
-  width: 100%;
-  padding: 5px;
-  width: 17rem;
-  height: 6rem;
+  display: flex;
+  flex: 1;
+  width: 10rem;
+  padding-left: 0.7rem;
+  box-shadow: 0.3rem 0.2rem 0.5rem #000000;
+
 `
 
 export const TextAddres = styled.p`
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 0.1rem;
   font-weight: bold;
-  
+  display: flex;
+  flex: 1;
+  width: 2rem;
 `
 
 export const CupomDiv = styled.div`
@@ -42,10 +44,10 @@ export const InputCupom = styled.input`
   width: 10rem;
   height: 1.5rem;
   background-color: #DED9D9;
-  border: 0.15rem solid #000;
+  border: none;
   border-radius: 0.5rem;
   padding-left: 0.5rem;
-
+  box-shadow: 0.3rem 0.2rem 0.5rem #000000;
 `
 export const PurDiv = styled.div`
   display: flex;
