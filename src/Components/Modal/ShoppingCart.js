@@ -45,7 +45,15 @@ const ShoppingCart = ({ price, title, image }) => {
               </TitleItem>
             </ContainerCart>
             <ContainetAdress>
-              <TextAddres>Delivery Addres:</TextAddres>
+              <TextAddres>Street/avenue:</TextAddres>
+              <AddresInput type="text" />
+              <TextAddres>Number:</TextAddres>
+              <AddresInput type="text" />
+              <TextAddres>State:</TextAddres>
+              <AddresInput type="text" />
+              <TextAddres>Country:</TextAddres>
+              <AddresInput type="text" />
+              <TextAddres>Zipcode:</TextAddres>
               <AddresInput type="text" />
             </ContainetAdress>
             <CupomDiv>
