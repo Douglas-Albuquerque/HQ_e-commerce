@@ -16,7 +16,7 @@
 <li>Testes basicos E2E com Cypress</li>
 <li> UI autoral </li>
 <li> Pagina responsiva</li>
-<li> em todos o projeto houve a preocupação com o versionamento no git e organização em branchs.</li>
+<li> em todo o projeto houve a preocupação com o versionamento no git e organização em branchs.</li>
 </ul>
 
 🤙
